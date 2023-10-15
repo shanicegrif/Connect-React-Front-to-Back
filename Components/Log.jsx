@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const UpdateLog = () => {
+const Log = () => {
     return (
         <div>
             
@@ -8,4 +9,4 @@ const UpdateLog = () => {
     );
 }
 
-export default UpdateLog;
+export default Log;

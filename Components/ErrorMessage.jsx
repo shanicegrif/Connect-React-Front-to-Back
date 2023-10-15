@@ -1,6 +1,6 @@
 import React from 'react';
 
-const UpdateLog = () => {
+const ErrorMessage = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const UpdateLog = () => {
     );
 }
 
-export default UpdateLog;
+export default ErrorMessage;
