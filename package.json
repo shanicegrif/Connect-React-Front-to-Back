@@ -1,0 +1,25 @@
+{
+  "name": "connectreact",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "react-scripts build",
+    "test": "cypress open",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "cypress": "^9.7.0",
+    "cypress-react-selector": "^3.0.0",
+    "cypress-watch-and-reload": "^1.10.3",
+    "vite": "^4.4.5"
+  }
+}
