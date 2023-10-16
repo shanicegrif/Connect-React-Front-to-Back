@@ -11,7 +11,6 @@ function ShowLog() {
     fetch(`${API}/logs/${index}`)
       .then((response) => response.json())
       .then((log) => {
-        console.log(log);
         setLog(log);
       })
       .catch((error) => {
@@ -20,11 +19,11 @@ function ShowLog() {
   }, [index, navigate]);
 
   const handleDelete = () => {
-    const httpsOptions = { "method": "DELETE" };
+    const httpsOptions = { method: "DELETE" };
 
     fetch(`${API}/logs/${index}`, httpsOptions)
       .then((res) => {
-        console.log(res)
+        console.log(res);
         alert("Log was deleted!");
         navigate("/logs");
       })
@@ -33,11 +32,13 @@ function ShowLog() {
 
   return (
     <article>
-      <h2>
-        {log.title} - {log.captainName}
-      </h2>
-      <h4>{log.post}</h4>
-      <p>Days since last crisis: {log.daysSinceLastCrisis}</p>
+      <div className="showLog">
+        <h2>
+          {log.title} - {log.captainName}
+        </h2>
+        <h4>{log.post}</h4>
+        <p>Days since last crisis: {log.daysSinceLastCrisis}</p>
+      </div>
       <div className="showNavigation">
         <div>
           <Link to={"/logs"}>

@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect, useState } from "react";
 import Log from "./Log";
 const API = import.meta.env.VITE_BASE_URL;
@@ -23,7 +22,7 @@ function Logs() {
             <tr>
               <th>Mistakes</th>
               <th>Captain Name</th>
-              <th>See this log</th>
+              <th>See This Log</th>
             </tr>
           </thead>
           <tbody>
