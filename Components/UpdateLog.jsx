@@ -44,7 +44,7 @@ function UpdateLog() {
 
     fetch(`${API}/logs/${index}`, httpOptions)
       .then(() => {
-        alert(`${log.name} has been updated!`);
+        alert(`${log.captainName} has been updated!`);
         navigate(`/logs/${index}`);
       })
       .catch((err) => console.error(err));
